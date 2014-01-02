@@ -2647,4 +2647,32 @@ config MSM_CPU_PWRCTL
 	  stand alone power collapse operation. Selecting this option
 	  ensures that they are always off.
 
+<<<<<<< HEAD
+=======
+config QUALCOMM_WLAN_PXO
+	default n
+	bool "Use PXO for WLAN clock source"
+	help
+	  Use PXO for clock source of WLAN chip
+
+config IOEXTENDER
+        default n
+        bool "Enable IOEXTENDER feature"
+	help
+	 To support IOEXTENDER feature
+
+config UPDATE_LCDC_LUT
+	default y
+	bool "enable LCDC LUT"
+	help
+	  enable LCDC LUT
+
+config FORCE_FAST_CHARGE
+	bool "Force AC charge mode at will"
+	default y
+	help
+	  A simple sysfs interface to force adapters that
+	  are detected as USB to charge as AC.
+
+>>>>>>> 20c36e0... fastcharge: initial adaptation for HTC One
 endif
