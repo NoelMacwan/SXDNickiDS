@@ -2667,7 +2667,7 @@ static void msm_otg_sm_work(struct work_struct *w)
  					msm_otg_notify_charger(motg,
  						IDEV_ACA_CHG_MAX);
  				else
- 					msm_otg_notify_charger(motg, 0)
+ 					msm_otg_notify_charger(motg, 0);
 			else
 				msm_hsusb_vbus_power(motg, 1);
 			msm_otg_start_timer(motg, TA_WAIT_VRISE, A_WAIT_VRISE);
